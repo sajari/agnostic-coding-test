@@ -2,18 +2,18 @@ package com.searchio.interview.fetcher;
 
 import com.searchio.interview.model.Entity;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Map;
 
 /**
- * A simple implementation of a Fetcher backed by a Map.
+ * Yes, this implementation is just backed by a {@link Map}, but really it might be back by a remote store
+ * an RDBMS, REST api ... something that takes time.
+ * A simple implementation of a Fetcher backed by a Map. This
  */
-public class FetcherInMemory implements Fetcher {
+public class RemoteStoreFetcher implements Fetcher {
 
     private final Map<Long, Entity> entityMap;
 
-    public FetcherInMemory(Map<Long, Entity> entityMap) {
+    public RemoteStoreFetcher(Map<Long, Entity> entityMap) {
         this.entityMap = entityMap;
     }
 
@@ -25,11 +25,6 @@ public class FetcherInMemory implements Fetcher {
     @Override
     public Entity save(Entity entity) {
         return entityMap.put(entity.getIdentifier(), entity);
-    }
-
-    @Override
-    public Collection<Entity> list() {
-        return Collections.unmodifiableCollection(entityMap.values());
     }
 
     @Override
