@@ -18,7 +18,7 @@ class CacheFetcherTest {
     @BeforeEach
     void setUp() {
         entityMap= new HashMap<>();
-        fetcher = new CacheFetcher(new RemoteStoreFetcher(entityMap), 2);
+        fetcher = new CacheFetcher();
     }
 
     @AfterEach
