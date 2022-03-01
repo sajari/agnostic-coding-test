@@ -24,7 +24,8 @@ public class RemoteStoreFetcher implements Fetcher {
 
     @Override
     public Entity save(Entity entity) {
-        return entityMap.put(entity.getIdentifier(), entity);
+        entityMap.put(entity.getIdentifier(), entity);
+        return entity;
     }
 
     @Override
