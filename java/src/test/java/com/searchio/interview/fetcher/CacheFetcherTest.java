@@ -37,13 +37,4 @@ class CacheFetcherTest {
         fetcher.save(new TestEntity(1L, this));
         assertEquals(1, entityMap.size());
     }
-
-    @Test
-    void clear() {
-        fetcher.save(new TestEntity(1L, this));
-        assertEquals(1, entityMap.size());
-
-        fetcher.clear();
-        assertEquals(0, entityMap.size());
-    }
 }

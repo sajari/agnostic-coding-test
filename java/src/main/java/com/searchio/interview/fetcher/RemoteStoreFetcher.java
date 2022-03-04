@@ -19,11 +19,21 @@ public class RemoteStoreFetcher implements Fetcher {
 
     @Override
     public Entity get(long id) {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return entityMap.get(id);
     }
 
     @Override
     public Entity save(Entity entity) {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         entityMap.put(entity.getIdentifier(), entity);
         return entity;
     }
