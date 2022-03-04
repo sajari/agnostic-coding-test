@@ -10,11 +10,11 @@ day-to-day work.
 
 ## The Problem
 
-Customers are reporting that companies application is slow and the team have determined that 
-calls to the `IFetcher` API is reason for the slow response times.
+Customers are reporting the companies application is slow and the engineering team have determined that 
+calls to the `IFetcher` API is the reason for the slow response times.
 
 You have been tasked in making calls to this API return within a more appropriate time for our 
-customers ... so with the guidance of the teams architect we have decided to implement a cache!
+customers ... so with the guidance of the team's architect we have decided to implement a cache!
 
 ```
 You cannot change the underlying implementation, since you do not have access to this source code, 
