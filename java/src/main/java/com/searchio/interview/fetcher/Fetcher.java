@@ -23,9 +23,4 @@ public interface Fetcher {
      * @return
      */
     Entity save(Entity entity);
-
-    /**
-     * Will clear all entities in the {@link Fetcher}
-     */
-    void clear();
 }

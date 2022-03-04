@@ -2,7 +2,7 @@ package com.searchio.interview.fetcher;
 
 import com.searchio.interview.model.Entity;
 
-public class CacheFetcher implements Fetcher{
+public class CacheFetcher {
 
     @Override
     public Entity get(long id) {
@@ -13,9 +13,6 @@ public class CacheFetcher implements Fetcher{
     public Entity save(Entity entity) {
         return null;
     }
-
-    @Override
-    public void clear() {
 
     }
 }
