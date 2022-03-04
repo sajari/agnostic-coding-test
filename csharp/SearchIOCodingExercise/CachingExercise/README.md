@@ -18,7 +18,7 @@ customers ... so with the guidance of the team's architect we have decided to im
 
 ```
 You cannot change the underlying implementation, since you do not have access to this source code, 
-consider this a library provided to you to use. This source code is available in the test 
+consider this a 3rd party library the application uses. This source code is available in the 
 `RemoteStoreFetcher` but it cannot be changed.
 ```
 
