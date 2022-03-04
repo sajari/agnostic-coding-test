@@ -8,6 +8,8 @@ The goal of this coding exercise is to see how you break down a problem and solv
 known problem space within industry; hopefully something you have seen or used before in your 
 day-to-day work.
 
+## The Problem
+
 Customers are reporting that companies application is slow and the team have determined that 
 calls to the `IFetcher` API is reason for the slow response times.
 
